@@ -2,6 +2,35 @@ import numpy as np
 import pandas as pd
 from typing import Callable, Dict, Any, List, Tuple, Optional
 
+
+#===============================================================
+
+
+from patterns.triangle import detect_triangle
+from patterns.wedge import detect_wedge
+from patterns.flag import detect_flag
+from patterns.head_and_shoulders import detect_head_and_shoulders
+from patterns.double_top import detect_double_top
+from patterns.triple_top import detect_triple_top
+from patterns.cup_with_handle import detect_cup_with_handle
+from patterns.quasimodo import detect_quasimodo
+from patterns.wolf_wave import detect_wolf_wave
+
+def build_default_registry():
+    reg = PatternRegistry()
+    reg.register("Triangle", detect_triangle, priority=1)
+    reg.register("Wedge", detect_wedge, priority=2)
+    reg.register("Flag", detect_flag, priority=3)
+    reg.register("HeadAndShoulders", detect_head_and_shoulders, priority=4)
+    reg.register("DoubleTop", detect_double_top, priority=5)
+    reg.register("TripleTop", detect_triple_top, priority=6)
+    reg.register("CupWithHandle", detect_cup_with_handle, priority=7)
+    reg.register("Quasimodo", detect_quasimodo, priority=8)
+    reg.register("WolfWave", detect_wolf_wave, priority=9)
+    return reg
+
+
+
 # =============================================================
 # Common utilities
 # =============================================================
