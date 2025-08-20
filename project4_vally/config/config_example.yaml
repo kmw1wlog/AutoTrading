@@ -1,0 +1,14 @@
+kis:
+  url_base: "https://openapi.koreainvestment.com:9443"  # 실전 계좌
+  # url_base: "https://openapivts.koreainvestment.com:29443"  # 모의 투자 계좌 (사용 시 주석 해제)
+
+  app_key: ...   # 한국투자증권에서 발급받은 앱 키
+  app_secret: ...
+  customer_type: "P"  # 개인(P) / 법인(B)
+
+  account:
+    number: ...  # 계좌번호 앞 8자리
+    product_code: ...  # 계좌상품코드 (계좌번호의 뒤 2자리)
+
+OPENAI_API_KEY: "sk-proj..."
+DART_API_KET: "..."

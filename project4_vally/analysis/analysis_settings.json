@@ -1,0 +1,35 @@
+{
+    "fundamental": {
+        "update_interval": {
+            "days": 7,
+            "description": "기본/재무 분석 보고서는 7일마다 갱신"
+        }
+    },
+    "technical": {
+        "min": {
+            "update_interval": {
+                "hours": 1,
+                "description": "분봉 데이터는 1시간마다 갱신"
+            }
+        },
+        "daily": {
+            "update_interval": {
+                "days": 1,
+                "description": "일봉 데이터는 1일마다 갱신"
+            }
+        },
+        "weekly": {
+            "update_interval": {
+                "days": 7,
+                "description": "주봉 데이터는 7일마다 갱신"
+            }
+        }
+    },
+    "news": {
+        "update_interval": {
+            "hours": 6,
+            "description": "뉴스 분석 보고서는 6시간마다 갱신"
+        }
+    }
+
+}

@@ -1,0 +1,19 @@
+{
+    "chart_collection": {
+        "min": {
+            "days_ago": 7,
+            "description": "분봉 데이터는 7일 전부터 수집"
+        },
+        "daily": {
+            "days_ago": 1825,
+            "description": "일봉 데이터는 5년 전부터 수집"
+        },
+        "weekly": {
+            "days_ago": 3650,
+            "description": "주봉 데이터는 10년 전부터 수집"
+        }
+    },
+    "news_collection": {
+        "hours_threshold": 1
+    }
+}
